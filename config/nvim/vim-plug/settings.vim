@@ -1,7 +1,7 @@
 let mapleader=" "
 
+syntax on
 set exrc
-"set guicursor=
 set relativenumber
 set nu
 set nohlsearch
@@ -18,7 +18,6 @@ set nobackup
 set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
-"set termguicolors
 set scrolloff=8
 set noshowmode
 set completeopt=menuone,noinsert,noselect
@@ -26,5 +25,3 @@ set signcolumn=yes
 set cmdheight=2
 set updatetime=50
 set shortmess+=c
-"set colorcolumn=80
-
