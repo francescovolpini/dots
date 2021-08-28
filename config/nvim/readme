@@ -1,2 +1,4 @@
 If you run arch or an arch based distro, you may wanna install `aur/python-neovim-git` to get functionality of YCM and vimspector.
-When cloning this repo, head to `$HOME.config/nvim/autoload/plugged/YouCompleteMe/` and run `python install.py` to compile ycm for use.
+Get in nvim and run `:PlugInstall` and :`GoInstallBinaries`.
+When cloning this repo, head to `$HOME.config/nvim/autoload/plugged/YouCompleteMe/` and run `python install.py` to compile YCM for use.
+
