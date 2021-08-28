@@ -47,5 +47,35 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-rfc'
 "    Plug 'davidhalter/jedi-vim'
 
+"    " Lsp / Auto comp
+"    "Plug 'hrsh7th/nvim-cmp'
+"    Plug 'hrsh7th/nvim-compe'
+"    Plug 'neoclide/coc.nvim', {'branch': 'release'} " Auto completition
+"    Plug 'neovim/nvim-lspconfig'                    " Lsp
+"    Plug 'glepnir/lspsaga.nvim'                     " Lsp
+
+"    "Colorschemes
+"    Plug 'gruvbox-community/gruvbox' " Holy grail of color schemes
+"    Plug 'flazz/vim-colorschemes'
+"    Plug 'chriskempson/base16-vim'
+
+"    " Fuzzy finder
+"    Plug 'nvim-telescope/telescope.nvim' " Fuzzy finder
+"    Plug 'nvim-telescope/telescope-fzy-native.nvim' " File sorter
+
+"    " Syntax
+"    Plug 'sheerun/vim-polyglot' " Highlighting
+"    Plug 'jiangmiao/auto-pairs' " Bracket autopairs
+
+"    " File explorer
+"    Plug 'scrooloose/NERDTree'  " File explorer
+"    Plug 'simrat39/symbols-outline.nvim'
+
+"    Plug 'ervandew/supertab'    " Tab for completition
+"    Plug 'mbbill/undotree'      " Undo history
+"    Plug 'sbdchd/neoformat'     " Formatter
+"    Plug 'psf/black'            " Formatter
+
+
 
 call plug#end()
