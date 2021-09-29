@@ -1,0 +1,61 @@
+default partial alphanumeric_keys
+xkb_symbols "ansi" {
+    include "us"
+    name[Group1]= "English (uciea-minimo3.en.ansi)";
+
+    key.type[group1] = "QWERTY_MOD_SWAP";
+
+    //                   Qwerty controls            Halmak keys                 Mac specials (RALT)
+
+    key <TLDE> {[        grave, asciitilde,         grave, asciitilde,  dead_grave, dead_horn          ]};
+    key <AE01> {[            1, exclam,                 4, numbersign,      exclamdown, U2044              ]};
+    key <AE02> {[            2, at,                     3, dollar,           trademark, EuroSign           ]};
+    key <AE03> {[            3, numbersign,             2, parenleft,    sterling, U2039              ]};
+    key <AE04> {[            4, dollar,                 1, at,            cent, U203A              ]};
+    key <AE05> {[            5, percent,                0, asciicircum,       infinity, UFB01              ]};
+    key <AE06> {[            6, asciicircum,            5, percent,    section, UFB02              ]};
+    key <AE07> {[            7, apersand,               6, exclam,    paragraph, doubledagger       ]};
+    key <AE08> {[            8, asterisk,               7, parenright, enfilledcircbullet, degree        ]};
+    key <AE09> {[            9, parenleft,              8, asterisk,       ordfeminine, periodcentered     ]};
+    key <AE10> {[            0, parenright,             9, ampersand,      masculine, singlelowquotemark ]};
+    key <AE11> {[        minus, underscore,             bracketleft, braceleft,      endash, emdash             ]};
+    key <AE12> {[        equal, plus,                   bracketright, braceright,          notequal, plusminus          ]};
+
+    key <AD01> {[            q, Q,                      p, P,                   oe, OE                 ]};
+    key <AD02> {[            w, W,                      y, Y,                U2211, doublelowquotemark ]};
+    key <AD03> {[            e, E,                      o, O,           dead_acute, acute              ]};
+    key <AD04> {[            r, R,                      u, U,           registered, U2030              ]};
+    key <AD05> {[            t, T,                      minus, underscore,               dagger, dead_caron         ]};
+    key <AD06> {[            y, Y,                      k, K,              yen, onequarter         ]};
+    key <AD07> {[            u, U,                      d, D,       dead_diaeresis, diaeresis          ]};
+    key <AD08> {[            i, I,                      h, H,      dead_circumflex, U02C6              ]};
+    key <AD09> {[            o, O,                      f, F,               oslash, Ooblique           ]};
+    key <AD10> {[            p, P,                      x, X,             Greek_pi, U220F              ]};
+    key <AD11> {[  bracketleft, braceleft,              q, Q, leftdoublequotemark, rightdoublequotemark ]};
+    key <AD12> {[ bracketright, braceright,             equal, plus, leftsinglequotemark, rightsinglequotemark ]};
+
+    key <AC01> {[            a, A,                      c, C,                aring, Aring              ]};
+    key <AC02> {[            s, S,                      i, I,               ssharp, dead_stroke        ]};
+    key <AC03> {[            d, D,                      e, E,    partialderivative, eth                ]};
+    key <AC04> {[            f, F,                      a, A,             function, dead_hook          ]};
+    key <AC05> {[            g, G,                      apostrophe, quotedbl,    copyright, dead_doubleacute   ]};
+    key <AC06> {[            h, H,                      g, G, dead_abovedot,dead_belowdot     ]};
+    key <AC07> {[            j, J,                      t, T,                U2206, onehalf            ]};
+    key <AC08> {[            k, K,                      n, N,       dead_abovering, UF8FF              ]};
+    key <AC09> {[            l, L,                      s, S,              notsign, THORN              ]};
+    key <AC10> {[    semicolon, colon,                  r, R,                u2026, thorn              ]};
+    key <AC11> {[   apostrophe, quotedbl,               v, V,            ae, AE                 ]};
+    key <AB01> {[            z, Z,                      z, Z,          Greek_OMEGA, dead_cedilla       ]};
+    key <AB02> {[            x, X,                      slash, question,                U2248, dead_ogonek        ]};
+    key <AB03> {[            c, C,                      comma, less,             ccedilla, Ccedilla           ]};
+    key <AB04> {[            v, V,                      period, greater,           squareroot, U25CA              ]};
+    key <AB05> {[            b, B,                      semicolon, colon,      integral, idotless           ]};
+    key <AB06> {[            n, N,                      w, W,           dead_tilde, U02DC              ]};
+    key <AB07> {[            m, M,                      m, M,                   mu, threequarters      ]};
+    key <AB08> {[        comma, less,                   l, L,        lessthanequal, dead_macron        ]};
+    key <AB09> {[       period, greater,                b, B,     greaterthanequal, dead_breve         ]};
+    key <AB10> {[        slash, question,               j, J,             division, questiondown       ]};
+    key <BKSL> {[    backslash, bar,            backslash, bar                                         ]};
+
+    include "level5(ralt_switch)"
+};
