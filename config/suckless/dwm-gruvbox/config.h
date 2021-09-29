@@ -15,7 +15,10 @@ static int swallowfloating    = 0;        /* 1 means swallow floating windows by
 static int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
-static char *fonts[]          = { "monospace:size=10", "twemoji:pixelsize=10:antialias=true:autohint=true"  };
+static const char *fonts[]          = { "JetBrainsMono Nerd Font:style:medium:size=10",
+                                        "Material Design Icons-Regular:size=10",
+					"JoyPixels:pixelsize=10:antialias=true:autohint=true"
+                                      };
 static char normbgcolor[]           = "#282828";
 static char normbordercolor[]       = "#b8bb26";
 static char normfgcolor[]           = "#ebdbb2";
