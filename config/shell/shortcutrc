@@ -1,5 +1,5 @@
 # vim: filetype=sh
-alias cac="cd $HOME.cache && ls -a" \
+alias cac="cd $HOME/.cache && ls -a" \
 cf="cd $HOME/.config && ls -a" \
 D="cd $HOME/dl && ls -a" \
 d="cd $HOME/.local/docs && ls -a" \
