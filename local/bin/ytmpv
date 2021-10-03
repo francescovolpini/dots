@@ -1,5 +1,4 @@
 #!/bin/sh
 query="$@"
 [ "$query" = "" ] &&  read -r -p "Input query: " query
-url=$(ytfzf -t -L -f $query)
-mpv "$url"
+url=$(ytfzf -t -f -N $query)
