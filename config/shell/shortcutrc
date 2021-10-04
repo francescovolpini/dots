@@ -1,17 +1,19 @@
 # vim: filetype=sh
-alias cac="cd $HOME/.cache && ls -a" \
-cf="cd $HOME/.config && ls -a" \
-D="cd $HOME/dl && ls -a" \
-d="cd $HOME/.local/docs && ls -a" \
-dt="cd $HOME/.local/share && ls -a" \
-rr="cd $HOME/.local/share && ls -a" \
-h="cd $HOME/&& ls -a" \
-m="cd $HOME/Music && ls -a" \
-mn="cd /mnt && ls -a" \
-pp="cd $HOME/.local/pix && ls -a" \
-sc="cd $HOME/.local/bin && ls -a" \
-src="cd $HOME/.local/src && ls -a" \
-vv="cd $HOME/.local/vids && ls -a" \
+alias cac="cd $HOME/.cache && ls -A" \
+cf="cd $HOME/.config && ls -A" \
+D="cd $HOME/dl && ls -A" \
+d="cd $HOME/.local/docs && ls -A" \
+dt="cd $HOME/.local/share && ls -A" \
+rr="cd $HOME/.local/share && ls -A" \
+h="cd $HOME/&& ls -A" \
+m="cd $HOME/Music && ls -A" \
+mn="cd /mnt && ls -A" \
+pp="cd $HOME/.local/pix && ls -A" \
+sc="cd $HOME/.local/bin && ls -A" \
+src="cd$HOME/.local/src && ls -A" \
+vv="cd $HOME/.local/vids && ls -A" \
+me="cd $HOME/.local/media && ls -A" \
+\
 bf="$EDITOR $HOME/.config/shell/bm-files" \
 bd="$EDITOR $HOME/.config/shell/bm-dirs" \
 cfx="$EDITOR $HOME/.config/x11/xresources" \
@@ -28,4 +30,6 @@ cfmc="$EDITOR $HOME/.config/ncmpcpp/config" \
 cfl="$EDITOR $HOME/.config/lf/lfrc" \
 cfL="$EDITOR $HOME/.config/lf/scope" \
 cfX="$EDITOR $HOME/.config/sxiv/exec/key-handler" \
+
+
 
