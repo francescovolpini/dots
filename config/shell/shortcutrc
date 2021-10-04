@@ -6,12 +6,12 @@ d="cd $HOME/.local/docs && ls -A" \
 dt="cd $HOME/.local/share && ls -A" \
 rr="cd $HOME/.local/share && ls -A" \
 h="cd $HOME/&& ls -A" \
-m="cd $HOME/Music && ls -A" \
+m="cd $HOME/media/mus && ls -A" \
 mn="cd /mnt && ls -A" \
-pp="cd $HOME/.local/pix && ls -A" \
+pp="cd $HOME/.local/media&/pix && ls -A" \
 sc="cd $HOME/.local/bin && ls -A" \
 src="cd$HOME/.local/src && ls -A" \
-vv="cd $HOME/.local/vids && ls -A" \
+vv="cd $HOME/.local/media/vids && ls -A" \
 me="cd $HOME/.local/media && ls -A" \
 \
 bf="$EDITOR $HOME/.config/shell/bm-files" \
@@ -30,6 +30,3 @@ cfmc="$EDITOR $HOME/.config/ncmpcpp/config" \
 cfl="$EDITOR $HOME/.config/lf/lfrc" \
 cfL="$EDITOR $HOME/.config/lf/scope" \
 cfX="$EDITOR $HOME/.config/sxiv/exec/key-handler" \
-
-
-
