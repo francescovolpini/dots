@@ -15,9 +15,10 @@ static int swallowfloating    = 0;        /* 1 means swallow floating windows by
 static int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrainsMono Nerd Font:style:medium:size=10",
+static const char *fonts[]          = { "Mononoki Nerd Font:size=10",
+										"JetBrainsMono Nerd Font:style:medium:size=10",
                                         "Material Design Icons-Regular:size=10",
-					"JoyPixels:pixelsize=10:antialias=true:autohint=true"
+										"JoyPixels:pixelsize=10:antialias=true:autohint=true"
                                       };
 static char normbgcolor[]           = "#282828";
 static char normbordercolor[]       = "#b8bb26";
@@ -30,7 +31,6 @@ static char *colors[][3] = {
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
-
 typedef struct {
 	const char *name;
 	const void *cmd;
@@ -192,7 +192,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run") },
-	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("ytfzf -D -f -N") },
+	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("passmenu") },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
@@ -204,6 +204,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_semicolon,	shifttag,	{ .i = 1 } },
 	{ MODKEY,			XK_apostrophe,	togglescratch,	{.ui = 1} },
 	/* { MODKEY|ShiftMask,		XK_apostrophe,	spawn,		SHCMD("") }, */
+	{ MODKEY|ShiftMask,		XK_apostrophe,	togglesmartgaps,	{0} },
 	{ MODKEY,			XK_Return,	spawn,		{.v = termcmd } },
 	{ MODKEY|ShiftMask,		XK_Return,	togglescratch,	{.ui = 0} },
 
@@ -332,3 +333,4 @@ static Button buttons[] = {
 	{ ClkTagBar,		0,		Button5,	shiftview,	{.i = 1} },
 	{ ClkRootWin,		0,		Button2,	togglebar,	{0} },
 };
+
